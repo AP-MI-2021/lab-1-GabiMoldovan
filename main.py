@@ -15,9 +15,9 @@ def get_product(lst):
     :param lst: the list of natural numbers
     :return: the product of the numbers from the list
     '''
-    rez=1
+    rez = 1
     for i in lst:
-        rez=rez*i
+        rez = rez*i
     return rez
 
 def get_cmmdc_v1(x, y):
@@ -58,7 +58,7 @@ def main():
         print("4. Greatest common divisor of two numbers using the second algorithm")
         print("5. Exit")
         option = input("Select the number of the algorithm: ")
-
+        # 2383 codul, problemele 3 si 4
         if option == "1":
             n = input("Type the number: ")
             print(is_prime(n))
