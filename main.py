@@ -9,7 +9,6 @@ def is_prime(n):
         if int(n)%int(i)==0: return False
     return True
 
-
 def get_product(lst):
     '''
     Calculates the product of the numbers from a list
@@ -18,7 +17,7 @@ def get_product(lst):
     '''
     rez=1
     for i in lst:
-        rez*=i
+        rez=rez*i
     return rez
 
 def get_cmmdc_v1(x, y):
@@ -65,9 +64,10 @@ def main():
             print(is_prime(n))
 
         if option == "2":
-            lst = [ 3, 4, 5 ]
-            assert get_product(lst) == 60
-            print("The product of 3, 4 and 5 is", end = " ")
+            print("Type the number of numbers: ", end = " ")
+            n = input()
+            print("Type the numbers: ", end = " ")
+            lst = list(map(int, input().split()))
             print(get_product(lst))
 
         if option == "3":
